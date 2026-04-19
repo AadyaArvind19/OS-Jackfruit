@@ -1,0 +1,66 @@
+# =========================
+# Build artifacts (user-space)
+# =========================
+boilerplate/engine
+boilerplate/memory_hog
+boilerplate/cpu_hog
+boilerplate/io_pulse
+*.out
+
+# =========================
+# Kernel module build artifacts
+# =========================
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+Module.symvers
+modules.order
+*.cmd
+.tmp_versions/
+
+# =========================
+# Root filesystem (generated)
+# =========================
+rootfs-base/
+rootfs-*/
+*.tar
+*.tar.gz
+
+# Ignore system-generated dirs inside rootfs
+boilerplate/rootfs/proc/
+boilerplate/rootfs/sys/
+boilerplate/rootfs/dev/
+boilerplate/rootfs/tmp/
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# Runtime / sockets
+# =========================
+/tmp/mini_runtime.sock
+
+# =========================
+# Editor / OS junk
+# =========================
+*.swp
+*~
+.vscode/
+*.bak
+*.tmp
+
+# =========================
+# Coverage / debug (optional)
+# =========================
+*.gcno
+*.gcda
+
+# =========================
+# Project-specific ignores
+# =========================
+project-guide.md
